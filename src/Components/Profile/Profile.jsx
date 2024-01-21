@@ -4,13 +4,15 @@ export const Profile = ({ profileData }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        <img
-          src={profileData.avatar}
-          alt={`${profileData.username} avatar`}
-          className={css.avatar}
-        />
+        <div className={css.avatarWrap}>
+          <img
+            src={profileData.avatar}
+            alt={`${profileData.username} avatar`}
+            className={css.avatar}
+          />
+        </div>
         <p className={css.name}>{profileData.username}</p>
-        <p className={css.tag}>{profileData.tag}</p>
+        <p className={css.tag}>@{profileData.tag}</p>
         <p className={css.location}>{profileData.location}</p>
       </div>
 

@@ -1,10 +1,23 @@
-.status {
-}
 .item {
+  border: 1px solid #212121;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
 }
+
 .avatar {
+  height: 60px;
+  margin: 4px 6px;
 }
 .name {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.status {
+  font-size: 12px;
 }
 
 .status.isOnline {
@@ -12,4 +25,7 @@
 }
 .status.isOffline {
   color: red;
+}
+
+.friendInfo {
 }

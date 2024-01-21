@@ -10,9 +10,13 @@ import transactions from '../transactions.json';
 function App() {
   return (
     <>
-      <Profile profileData={userData} />
-      <FriendList friendsData={friendsData} />
-      <TransactionHistory items={transactions} />
+      <aside>
+        <Profile profileData={userData} />
+        <FriendList friendsData={friendsData} />
+      </aside>
+      <main>
+        <TransactionHistory items={transactions} />
+      </main>
     </>
   );
 }
